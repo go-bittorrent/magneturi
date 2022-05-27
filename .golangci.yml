@@ -1,0 +1,64 @@
+linters-settings:
+  govet:
+    check-shadowing: true
+  gocyclo:
+    min-complexity: 15
+  maligned:
+    suggest-new: true
+  dupl:
+    threshold: 120
+  goconst:
+    min-len: 2
+    min-occurrences: 3
+  misspell:
+    locale: US
+  lll:
+    line-length: 140
+  goimports:
+    local-prefixes: github.com/go-bittorrent/magneturi
+  gocritic:
+    enabled-tags:
+      - diagnostic
+      - experimental
+      - opinionated
+      - performance
+      - style
+    disabled-checks:
+      - hugeParam
+      - rangeValCopy
+      - exitAfterDefer
+      - whyNoLint
+      - singleCaseSwitch
+      - commentedOutCode
+      - appendAssign
+      - unnecessaryBlock
+      - redundantSprint
+      - octalLiteral
+
+linters:
+  disable-all: true
+  enable:
+    - deadcode
+    - depguard
+    - dogsled
+    - errcheck
+    - goconst
+    - gocritic
+    - gofmt
+    - goimports
+    - revive
+    - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    - misspell
+    - nakedret
+    - staticcheck
+    - structcheck
+    - stylecheck
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - varcheck
+    - whitespace
